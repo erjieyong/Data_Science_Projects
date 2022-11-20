@@ -60,7 +60,7 @@ The selected model was deployed using the following packages/programs
 - Google Cloud
 - Streamlit
 
-The final model is now live on streamlit: [Link](https://erjieyong-pytho-ames-house-price-predictionstreamlit-app-lmrvb2.streamlitapp.com/)
+The final model is now live on streamlit: [Link](https://erjieyong-data--ames-house-price-predictionstreamlit-app-jb3zcr.streamlit.app/)
 
 # Conclusion
 Based on our analysis, a house's neighborhood is one of the most important features which confirm conventional thinking. Out of all the neighborhoods, `StoneBr` and `NoRidge` will likely get the higher Sale Price.
