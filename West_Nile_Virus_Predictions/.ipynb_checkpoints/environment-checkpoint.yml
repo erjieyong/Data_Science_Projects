@@ -1,0 +1,19 @@
+# RUN: conda env create -f environment.yml
+# RUN: conda activate dsi-p4
+name: dsi-p4
+channels:
+  - conda-forge
+dependencies: #conda dependencies. may take very long to solve due to multiple dependencies with different packages. move them to pip dependencies will help to resolve these issues
+  - pip
+  - python=3.8
+  - pip:
+    - tensorflow
+    - pycaret
+    - lxml
+    - jupyterlab
+    - jupyterlab-git
+    - mlflow
+    - requests
+    - seaborn
+    - streamlit
+    - transformers
