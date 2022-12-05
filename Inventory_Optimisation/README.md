@@ -16,8 +16,6 @@ We are particularly interested in safety stocks calculation that takes into acco
 
 SS = Z $\times$ $\sqrt{(x̄_{leadtime} \times σ_{demand}^2) + (x̄_{demand}^2 \times σ_{leadtime}^2)}$
 
-Reference: [https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf](https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf)
-
 ## Economic Order Quantity
 Economic order quantity (EOQ) refers to the ideal order quantity a company should purchase in order to minimize its inventory costs, such as holding costs, shortage costs, and order costs
 
@@ -25,16 +23,12 @@ The formula for calculating EOQ is as such:
 
 EOQ = $\sqrt{(2 \times HandlingCost_{per shipment} \times x̄_{demand/year}) / HoldingCost_{unit/year}}$
 
-Reference: [https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp](https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp)
-
 ## Reorder point
 Reorder point (ROP) is the minimum inventory level a specific product can reach before a company is prompted to order more inventory based on the EOQ
 
 The formula for calculating ROP is as such:
 
 ROP = SS + $x̄_{demand}$ $\times$  $x̄_{leadtime}$
-
-Reference: [https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/](https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/)
 
 # Modeling and Deployment
 Data cleaning is first done on the historical data. These cleaned variables are then subsequently fed into the different formula for SS, EOQ and ROP. Finally, the output are presented on streamlit upon user's selection of the different variables.
@@ -46,3 +40,8 @@ Users may also choose to fine tune the different variables to further explore th
 # Further Evaluation
  - Consider a combination of various SKUs being fitted into a container for further optimisation
  - Calculate the total supply chain costs for all SKUs across different hubs
+
+# References
+[https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf](https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf)
+[https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp](https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp)
+[https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/](https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/)
