@@ -42,6 +42,6 @@ Users may also choose to fine tune the different variables to further explore th
  - Calculate the total supply chain costs for all SKUs across different hubs
 
 # References
-[https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf](https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf)
-[https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp](https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp)
-[https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/](https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/)
+- [https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf](https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf)
+- [https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp](https://www.investopedia.com/ask/answers/052715/how-economic-order-quantity-model-used-inventory-management.asp)
+- [https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/](https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/)
