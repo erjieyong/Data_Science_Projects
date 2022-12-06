@@ -6,7 +6,7 @@ import math
 
 average_days_per_month = 30.437
 
-df_combined = pd.read_csv('https://generalassemblydsi32.s3.ap-southeast-1.amazonaws.com/df_combined.csv')
+df_combined = pd.read_csv('https://generalassemblydsi32.s3.ap-southeast-1.amazonaws.com/df_combined_sanitised.csv')
 
 # Title of the page
 st.title("Safety stock, EOQ, ROP Recommender")
