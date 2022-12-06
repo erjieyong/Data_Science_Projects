@@ -12,7 +12,7 @@ df_combined = pd.read_csv('https://generalassemblydsi32.s3.ap-southeast-1.amazon
 st.title("Safety stock, EOQ, ROP Recommender")
 st.write("Recommend safety stock, economic order quantity (EOQ), reorder point (ROP) based on established supply chain algorithm. Assumptions made that demand and lead time are independent variables")
 
-
+st.write("Github link: [github/erjieyong](https://github.com/erjieyong/Data_Science_Projects/tree/main/Inventory_Optimisation)")
 
 
 # Create placement containers in sequence
