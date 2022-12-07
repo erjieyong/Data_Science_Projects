@@ -40,6 +40,9 @@ VideoMAE | Yes* | 1 | Available on huggingface, colab | ✓ |
 
 Through the usage of mask encoder (i.e. hiding > 75% of the data), VideoMAE is able to obtain blazingly fast inference speed (3.2x) and with high performance and low computational power. Moreover, VideoMAE has also been trained for Kinetics-400, UCF101 and HMDB51 datasets and achieve very respectable results as well. Hence, we will proceed to go with VideoMAE as it gives an overall best result with good balance in speed and accuracy.
 
+<img src="MAE.webp" width=700/> <br>
+<i>Figure 1: Illustration of Masked Autoencoder. [source](https://medium.com/the-last-neural-cell/08-summary-masked-autoencoder-is-all-you-need-for-any-modality-3ced90dd0a26)</i>
+
 ## Deployment
 To reduce deployment time, we rely on a pre-trained model from VideoMAE that is available on HuggingFace. This saves us alot of time as we do not have to train again and huggingface greatly simplifies the preprocessing and inference steps.
 
@@ -49,7 +52,11 @@ Our deployment process follows the following steps:
 3) Perform testing of model on jupyter notebook
 4) Deployment on streamlit
 
-[Streamlit link](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
+[**Streamlit link**](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
+
+
+<img src="streamlit_screenshot.jpg" width=700/> <br>
+<i>Figure 2: Screenshot of streamlit app with predicted output in green.</i>
 
 ## Future Works
 
