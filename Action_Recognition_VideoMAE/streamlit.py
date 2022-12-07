@@ -73,7 +73,7 @@ def predict(video_path):
 
 
 # form
-url = form.text_input("Enter a youtube url. (youtube shorts included)", value = 'https://www.youtube.com/shorts/MK_muRnpTlk')
+url = form.text_input("Enter a youtube url. (youtube shorts included)", value = 'https://www.youtube.com/shorts/ZMr_OkDfUUg')
 submit_form = form.form_submit_button(label = "Predict!")
 
 if submit_form:
