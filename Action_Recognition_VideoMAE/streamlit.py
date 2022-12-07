@@ -16,10 +16,9 @@ model.to(device)
 # outline
 st.title("Action Recognition")
 st.write("Github link: [github/erjieyong](https://github.com/erjieyong/Data_Science_Projects/tree/main/Action_Recognition_VideoMAE)")
-form = st.form(key='form')
-with st.expander("Expand to see list of predictable classes"):
-  form_col1,form_col2, form_col3 = st.columns(3)
-  form_col1.write("""
+with st.sidebar:
+  st.subheader("List of predictable classes")
+  st.write("""
   1. abseiling (1146)
 2. air drumming (1132)
 3. answering questions (478)
@@ -154,9 +153,7 @@ with st.expander("Expand to see list of predictable classes"):
 132. folding clothes (695)
 133. folding napkins (874)
 134. folding paper (940)
-  """)
-  form_col2.write("""
-  135. front raises (962)
+135. front raises (962)
 136. frying vegetables (608)
 137. garbage collecting (441)
 138. gargling (430)
@@ -289,9 +286,7 @@ with st.expander("Expand to see list of predictable classes"):
 265. reading book (1148)
 266. reading newspaper (424)
 267. recording music (415)
-  """)
-  form_col3.write("""
-  268. riding a bike (476)
+268. riding a bike (476)
 269. riding camel (716)
 270. riding elephant (1104)
 271. riding mechanical bull (698)
@@ -424,7 +419,14 @@ with st.expander("Expand to see list of predictable classes"):
 398. yawning (398)
 399. yoga (1140)
 400. zumba (1093)
+
   """)
+form = st.form(key='form')
+form.caption("""
+How to use:
+1. Choose any youtube video and copy and paste its link into the text field below. \n 
+2. Click predict button and the model will recognise the action in the video
+""")
 output = st.container()
 _,video_container, _ = output.columns([1,3,1])
 
