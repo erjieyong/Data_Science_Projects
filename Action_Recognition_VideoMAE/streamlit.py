@@ -84,7 +84,7 @@ if submit_form:
         'format':'mp4[width<=?360][height<=?360]',
         'noplaylist': True,
         'outtmpl': 'test.mp4',
-        'cachedir':None
+        'cachedir':False
         }
       ydl = youtube_dl.YoutubeDL(ydl_opts)
       try:
