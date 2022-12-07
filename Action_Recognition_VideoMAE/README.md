@@ -49,7 +49,7 @@ Our deployment process follows the following steps:
 3) Perform testing of model on jupyter notebook
 4) Deployment on streamlit
 
-Streamlit: [link](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
+[Streamlit link](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
 
 ## Future Works
 
