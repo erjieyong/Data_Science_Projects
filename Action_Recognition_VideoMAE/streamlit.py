@@ -486,8 +486,6 @@ def predict(video_path):
 url = form.text_input("Enter a youtube url. (youtube shorts included)", value = 'https://www.youtube.com/shorts/XlBaKlUdYik')
 submit_form = form.form_submit_button(label = "Predict!")
 
-
-
 if submit_form:
     with st.spinner('Downloading video'):
       # Download youtube video in specified format
@@ -512,5 +510,4 @@ if submit_form:
       # display video
       video_container.write("Output")
       video_container.video('test.mp4', format="video/mp4", start_time=0) 
-      video_container.write(f"Video is showing someone **{result}**")
-
+      video_container.write(f"Video is showing someone <span style='color:green; font-weight: bold'>{result}</span>", unsafe_allow_html=True)
