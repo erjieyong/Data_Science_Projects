@@ -2,3 +2,6 @@ transformers
 decord
 youtube-dl
 ffmpeg
+torch
+torchvision
+torchaudio
