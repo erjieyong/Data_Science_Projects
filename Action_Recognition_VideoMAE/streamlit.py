@@ -2,7 +2,6 @@ import streamlit as st
 from transformers import VideoMAEFeatureExtractor, VideoMAEForVideoClassification
 import torch
 import youtube_dl
-from ipywidgets import Video
 # decord is a faster alternative of opencv
 from decord import VideoReader, cpu 
 import numpy as np
@@ -16,6 +15,7 @@ model.to(device)
 
 # outline
 st.title("Action Recognition")
+st.write("Github link: [github/erjieyong](https://github.com/erjieyong/Data_Science_Projects/tree/main/Action_Recognition_VideoMAE)")
 form = st.form(key='form')
 output = st.container()
 _,video_container, _ = output.columns([1,3,1])
