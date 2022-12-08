@@ -71,7 +71,8 @@ We have identified the following requirements
 - Model should be fast and works on video
 
 ### Model Evaluation
-While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In the end, YOLOv7-Pose was chosen because of the popularity within the community and my familiarity with the model. 
+While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In addition, models based on mediapipe proved to be very encouraging at the start as it is fast and conduct inference while considering the previous frames. This resulted in much higher accuracy and better FPS performance. However, it has a critical flaw in that it only runs on a single person.
+In the end, YOLOv7-Pose was chosen because it can run pose estimation on multiple person while still providing better FPS than ViTPose. 
 
 ### Result
 
