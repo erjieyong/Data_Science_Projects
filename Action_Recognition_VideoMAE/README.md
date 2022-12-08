@@ -14,8 +14,11 @@ For example, a fight might happen in a isolated corner of an airport without pas
 3) Finally, based on information from step 2, begin person reidentification through all CCTVs in the vicinity to quickly track down the subject.
 
 ## Scope
-In this project, we will attempt to make use of machine learning to showcase the capabilities of computer vision in performing action recognition
+In this project, we will attempt to make use of machine learning to showcase the capabilities of computer vision in performing action recognition in 2 areas
+- Action recognition of the entire video content
+- Fall detection of people in the video content
 
+# Action Recognition of entire video
 ## Business Requirements
 We have identified the following requirements
 - Dataset on human behavior and actions
@@ -43,7 +46,16 @@ Through the usage of mask encoder (i.e. hiding > 75% of the data), VideoMAE is a
 <img src="MAE.webp" width=700/> <br>
 <i>Figure 1: Illustration of Masked Autoencoder. [source](https://medium.com/the-last-neural-cell/08-summary-masked-autoencoder-is-all-you-need-for-any-modality-3ced90dd0a26)</i>
 
-## Deployment
+# Fall Detection
+## Business Requirements
+We have identified the following requirements
+- Pre-trained on dataset with human poses
+- Model should be fast and works on video
+
+## Model Evaluation
+While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In the end, YOLOv7-Pose was chosen because of the popularity within the community and my familiarity with the model. 
+
+# Deployment
 To reduce deployment time, we rely on a pre-trained model from VideoMAE that is available on HuggingFace. This saves us alot of time as we do not have to train again and huggingface greatly simplifies the preprocessing and inference steps.
 
 Our deployment process follows the following steps:
@@ -51,6 +63,7 @@ Our deployment process follows the following steps:
 2) We selected finetuned model ('videomae-base-finetuned-kinetics') on hugging face as it is trained on kinetics that include various human behaviours applicable to our problem statement such as punching, kicking, wrestling and crying. It also includes other activities that is undesirable as it caused disturbances (especially in a airport or mall) such as busking, playing football, jumping and singing.
 3) Perform testing of model on jupyter notebook
 4) Deployment on streamlit
+  - Note that fall detection currently only works with the default youtube video. This function will be disabled for other videos
 
 [**Streamlit link**](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
 
@@ -58,9 +71,11 @@ Our deployment process follows the following steps:
 <img src="streamlit_screenshot.jpg" width=700/> <br>
 <i>Figure 2: Screenshot of streamlit app with predicted output in green.</i>
 
-## Future Works
+# Future Works
 
 While we are able to showcase the capabilities of action recognition using VideoMAE, there are a still room for improvements
 - finetune on datasets that include more human behaviors such as riots and fighting
-- test it on real time cctv footage
+- finetune the pose estimation to be more accurate
+- finetune the fall detection algorithim
+- test both models on real time cctv footage and run them using GPU
 - multi-output classification (in a big cctv footage, there could be various activities happening in each frame)
