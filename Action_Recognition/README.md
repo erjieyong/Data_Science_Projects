@@ -56,7 +56,7 @@ Our deployment process follows the following steps:
 4) Deployment on streamlit
 
 
-[**Streamlit link**](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
+[**Streamlit link**](https://erjieyong-data-science-proje-action-recognitionstreamlit-17dsb7.streamlit.app/)
 
 
 <img src="streamlit_screenshot.jpg" width=700/> <br>
