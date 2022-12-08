@@ -19,12 +19,12 @@ In this project, we will attempt to make use of machine learning to showcase the
 - Fall detection of people in the video content
 
 # Action Recognition of entire video
-## Business Requirements
+### Business Requirements
 We have identified the following requirements
 - Dataset on human behavior and actions
 - Pre-trained model on said dataset that is fast and works on video
 
-## Dataset
+### Dataset
 The relevant and popular datasets based on paperswithcode are as follows:
 Dataset | Description | No of classes | Best Model
 -------- | ---------- | -------- | -------- |
@@ -33,7 +33,7 @@ HMDB51 | Comprises of 6849 video clips from 51 categories (such as “jump”, �
 AVA v2.2 | Crossover between AVA and Kinetics doubling the number of annotations of Kinetics 799 with increase of videos by over 500x | 700 | VideoMAE
 Kinetics 400 | Comprises of around 500,000 clips covering 400 classes | 400 | SMART
 
-## Model Evaluation
+### Model Evaluation
 Based on the above selected dataset, we will evaluate SMART, DEEP-HAL with ODF+SDF and VideoMAE
 Model | Code Availability | Speed Ranking | Community Interest | Selection
 -------- | ---------- | -------- | -------- | -------- |
@@ -46,7 +46,7 @@ Through the usage of mask encoder (i.e. hiding > 75% of the data), VideoMAE is a
 <img src="MAE.webp" width=700/> <br>
 <i>Figure 1: Illustration of Masked Autoencoder. [source](https://medium.com/the-last-neural-cell/08-summary-masked-autoencoder-is-all-you-need-for-any-modality-3ced90dd0a26)</i>
 
-# Deployment
+### Deployment
 To reduce deployment time, we rely on a pre-trained model from VideoMAE that is available on HuggingFace. This saves us alot of time as we do not have to train again and huggingface greatly simplifies the preprocessing and inference steps.
 
 Our deployment process follows the following steps:
@@ -65,15 +65,15 @@ Our deployment process follows the following steps:
 # Fall Detection
 In addition, fall detection model is also deployed on a video that can be found at [link](https://www.youtube.com/watch?v=VofK7BL0Ktg)
 
-## Business Requirements
+### Business Requirements
 We have identified the following requirements
 - Pre-trained on dataset with human poses
 - Model should be fast and works on video
 
-## Model Evaluation
+### Model Evaluation
 While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In the end, YOLOv7-Pose was chosen because of the popularity within the community and my familiarity with the model. 
 
-## Result
+### Result
 
 
 https://user-images.githubusercontent.com/109052378/206369999-472639b8-7cb1-4341-b6e0-33372ab67336.mp4
