@@ -46,15 +46,6 @@ Through the usage of mask encoder (i.e. hiding > 75% of the data), VideoMAE is a
 <img src="MAE.webp" width=700/> <br>
 <i>Figure 1: Illustration of Masked Autoencoder. [source](https://medium.com/the-last-neural-cell/08-summary-masked-autoencoder-is-all-you-need-for-any-modality-3ced90dd0a26)</i>
 
-# Fall Detection
-## Business Requirements
-We have identified the following requirements
-- Pre-trained on dataset with human poses
-- Model should be fast and works on video
-
-## Model Evaluation
-While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In the end, YOLOv7-Pose was chosen because of the popularity within the community and my familiarity with the model. 
-
 # Deployment
 To reduce deployment time, we rely on a pre-trained model from VideoMAE that is available on HuggingFace. This saves us alot of time as we do not have to train again and huggingface greatly simplifies the preprocessing and inference steps.
 
@@ -63,13 +54,30 @@ Our deployment process follows the following steps:
 2) We selected finetuned model ('videomae-base-finetuned-kinetics') on hugging face as it is trained on kinetics that include various human behaviours applicable to our problem statement such as punching, kicking, wrestling and crying. It also includes other activities that is undesirable as it caused disturbances (especially in a airport or mall) such as busking, playing football, jumping and singing.
 3) Perform testing of model on jupyter notebook
 4) Deployment on streamlit
-  - Note that fall detection currently only works with the default youtube video. This function will be disabled for other videos
+
 
 [**Streamlit link**](https://erjieyong-data-scie-action-recognition-videomaestreamlit-78ydks.streamlit.app/)
 
 
 <img src="streamlit_screenshot.jpg" width=700/> <br>
 <i>Figure 2: Screenshot of streamlit app with predicted output in green.</i>
+
+# Fall Detection
+In addition, fall detection model is also deployed on a video that can be found at [link](https://www.youtube.com/watch?v=VofK7BL0Ktg)
+
+## Business Requirements
+We have identified the following requirements
+- Pre-trained on dataset with human poses
+- Model should be fast and works on video
+
+## Model Evaluation
+While there are other pose estimation models out there, the most popular being ViTPose, it's hugging face showcase proved discouraging as it took more than 10 minutes to run one of its default video. In the end, YOLOv7-Pose was chosen because of the popularity within the community and my familiarity with the model. 
+
+## Result
+
+
+https://user-images.githubusercontent.com/109052378/206369999-472639b8-7cb1-4341-b6e0-33372ab67336.mp4
+
 
 # Future Works
 
