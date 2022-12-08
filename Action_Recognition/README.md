@@ -15,8 +15,8 @@ For example, a fight might happen in a isolated corner of an airport without pas
 
 ## Scope
 In this project, we will attempt to make use of machine learning to showcase the capabilities of computer vision in performing action recognition in 2 areas
-- Action recognition of the entire video content
-- Fall detection of people in the video content
+- Action recognition of entire video
+- Fall detection of people in video
 
 # Action Recognition of entire video
 ### Business Requirements
@@ -63,7 +63,7 @@ Our deployment process follows the following steps:
 <i>Figure 2: Screenshot of streamlit app with predicted output in green.</i>
 
 # Fall Detection
-In addition, fall detection model is also deployed on a video that can be found at [link](https://www.youtube.com/watch?v=VofK7BL0Ktg)
+Fall detection model is conducted on a video that can be found at [link](https://www.youtube.com/watch?v=VofK7BL0Ktg)
 
 ### Business Requirements
 We have identified the following requirements
