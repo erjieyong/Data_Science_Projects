@@ -15,7 +15,7 @@ model.to(device)
 
 # outline
 st.title("Action Recognition")
-st.write("Github link: [github/erjieyong](https://github.com/erjieyong/Data_Science_Projects/tree/main/Action_Recognition_VideoMAE)")
+st.write("Github link: [github/erjieyong](https://github.com/erjieyong/Data_Science_Projects/tree/main/Action_Recognition)")
 with st.sidebar:
   st.subheader("List of predictable classes")
   st.write("""
