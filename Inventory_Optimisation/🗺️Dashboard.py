@@ -74,19 +74,19 @@ def display_stock_warn_reorder(hub):
 ###############
 ## STREAMLIT ##
 ###############
-console_tab, cvg_tab, dub_tab, sin_tab, slc_tab = st.tabs(["CONSOLE", "CVG", "DUB", "SIN", "SLC"])
+console_tab, CHANGI_tab, DHOBY_tab, SERANGOON_tab, SHENTON_tab = st.tabs(["CONSOLE", "CHANGI", "DHOBY", "SERANGOON", "SHENTON"])
 
 with console_tab:
     display_stock_warn_reorder("CONSOLE")
 
-with cvg_tab:
-    display_stock_warn_reorder("CVG")
+with CHANGI_tab:
+    display_stock_warn_reorder("CHANGI")
 
-with dub_tab:
-    display_stock_warn_reorder("DUB")
+with DHOBY_tab:
+    display_stock_warn_reorder("DHOBY")
 
-with sin_tab:
-    display_stock_warn_reorder("SIN")
+with SERANGOON_tab:
+    display_stock_warn_reorder("SERANGOON")
     
-with slc_tab:
-    display_stock_warn_reorder("SLC")
+with SHENTON_tab:
+    display_stock_warn_reorder("SHENTON")

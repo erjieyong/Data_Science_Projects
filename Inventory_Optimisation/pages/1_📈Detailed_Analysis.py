@@ -94,7 +94,7 @@ def preset(hub, sku, mode):
                 Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no_console, "current_stock"]:,} <br>
                 Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no_console, "expected_pull_next_90d"]:,} 
                 <br><br>
-                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
                 </div>
                 """, unsafe_allow_html=True)
             elif console_support == False:
@@ -107,7 +107,7 @@ def preset(hub, sku, mode):
                 Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no_console, "current_stock"]:,} <br>
                 Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no_console, "expected_pull_next_90d"]:,} 
                 <br><br>
-                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
                 </div>
                 """, unsafe_allow_html=True)
             elif console_support == True:
@@ -120,13 +120,13 @@ def preset(hub, sku, mode):
                 Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no_console, "current_stock"]:,} <br>
                 Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no_console, "expected_pull_next_90d"]:,} 
                 <br><br>
-                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+                <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
                 </div>
                 """, unsafe_allow_html=True)
 
         # display warning if rop is higher than eoq
         if rop > eoq:
-            result_container.info("Since EOQ is less than ROP due to low handling cost, demand or holding cost, we will plot the inventory level assuming that we order in multiple of EOQ until it exceed ROP. In actual situation, combine them with other skus to yield much better overall costs")
+            result_container.info("SERANGOONce EOQ is less than ROP due to low handling cost, demand or holding cost, we will plot the inventory level assuming that we order in multiple of EOQ until it exceed ROP. In actual situation, combine them with other skus to yield much better overall costs")
 
         # calculate inventory level over 365 days
         data = calc_365_inventory(safety_stock, eoq, rop, st.session_state.demand_mean, st.session_state.demand_sd, st.session_state.leadtime_mean, st.session_state.leadtime_sd, random_demand_leadtime_boolean = False)
@@ -279,9 +279,9 @@ def calc_365_inventory(safety_stock, eoq, rop, demand_mean, demand_sd, leadtime_
                 data['inventory'][day] += actual_eoq
     return data
 
-# Function to change the result output upon pressing submit button
+# Function to change the result output upon presSERANGOONg submit button
 def display_recommendations():
-    # we have to do this rather than passing it to the function using arg because streamlit only update the args after 1 pass
+    # we have to do this rather than pasSERANGOONg it to the function uSERANGOONg arg because streamlit only update the args after 1 pass
     # to get the most updated value immediately, we need to use session state instead
     service_level = st.session_state.service_level
     demand_mean = st.session_state.demand_mean
@@ -319,7 +319,7 @@ def display_recommendations():
             Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no, "current_stock"]:,} <br>
             Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no, "expected_pull_next_90d"]:,} 
             <br><br>
-            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
             </div>
             """, unsafe_allow_html=True)
         elif console_support == False:
@@ -332,7 +332,7 @@ def display_recommendations():
             Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no, "current_stock"]:,} <br>
             Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no, "expected_pull_next_90d"]:,} 
             <br><br>
-            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
             </div>
             """, unsafe_allow_html=True)
         elif console_support == True:
@@ -345,13 +345,13 @@ def display_recommendations():
             Current stock in CONSOLE Hub: {st.session_state.df.loc[target_row_no, "current_stock"]:,} <br>
             Expected total pull quantity from CONSOLE Hub within next 90 days: {st.session_state.df.loc[target_row_no, "expected_pull_next_90d"]:,} 
             <br><br>
-            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh using shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
+            <font size = "2">* Calculation is based on monthly actual demand (constantly refresh uSERANGOONg shipment order detail report) & transit time (transport mode) assuming that all hubs will use the selected transport mode</font>
             </div>
             """, unsafe_allow_html=True)
 
     # display warning if rop is higher than eoq
     if rop > eoq:
-        result_container.info("Since EOQ is less than ROP due to low handling cost, demand or holding cost, we will plot the inventory level assuming that we order in multiple of EOQ until it exceed ROP. In actual situation, combine them with other skus to yield much better overall costs")
+        result_container.info("SERANGOONce EOQ is less than ROP due to low handling cost, demand or holding cost, we will plot the inventory level assuming that we order in multiple of EOQ until it exceed ROP. In actual situation, combine them with other skus to yield much better overall costs")
 
     # calculate inventory level over 365 days
     data = calc_365_inventory(safety_stock, eoq, rop, demand_mean, demand_sd, leadtime_mean, leadtime_sd, random_demand_leadtime_boolean)
@@ -453,8 +453,8 @@ with result_container:
 service_level_val = data_form.slider('Desired service level for SKU (%)', 1, 100, 90, help="Higher service level will result in higher safety stock", key='service_level')
 demand_mean_val = data_form_col1.number_input('Average monthly demand for SKU at hub', value = 12.0, min_value = 0.01, step = 1.0, format = "%f", help="Higher demand will result in higher safety stock, economic order quantity and reorder point", key='demand_mean')
 demand_sd_val = data_form_col1.number_input('Standard deviation of monthly demand for SKU at hub', value = 1.0, min_value = 0.01, step = 0.01, format = "%f", help="Higher variability of demand month on month will result in higher safety stock", key='demand_sd')
-leadtime_mean_val = data_form_col2.number_input('Average lead time from SIN to hub (days)', value = 1.0, min_value = 0.01, step = 1.0, format = "%f", help="Longer lead time will result in higher safety stock and reorder point", key='leadtime_mean')
-leadtime_sd_val = data_form_col2.number_input('Standard deviation of lead time from SIN to hub (days)', value = 1.0, min_value = 0.01, step = 0.01, format = "%f", help="Higher variability of lead time will result in higher safety stock", key='leadtime_sd')
+leadtime_mean_val = data_form_col2.number_input('Average lead time from SERANGOON to hub (days)', value = 1.0, min_value = 0.01, step = 1.0, format = "%f", help="Longer lead time will result in higher safety stock and reorder point", key='leadtime_mean')
+leadtime_sd_val = data_form_col2.number_input('Standard deviation of lead time from SERANGOON to hub (days)', value = 1.0, min_value = 0.01, step = 0.01, format = "%f", help="Higher variability of lead time will result in higher safety stock", key='leadtime_sd')
 holding_cost_per_unit_per_month_val = data_form_col1.number_input('Holding cost per unit of SKU per month', value = 1.0, min_value = 0.01, step = 0.01, format = "%f", help="Higher holding cost will reduce the economic order quantity per order", key='holding_cost_per_unit_per_month')
 handling_cost_val = data_form_col2.number_input('Handling cost per shipment order', value = 1.0, min_value = 0.01, step = 1.0, format = "%f", help="Higher handling cost per order will increase the economic order quantity per order", key='handling_cost')
 random_demand_leadtime_boolean = data_form.checkbox("Simulate normalised random demand and leadtime", value=False, key='random_demand_leadtime', help="Enabling this will assuming randomised demand and leadtime normalised according to mean and standard deviation input")
