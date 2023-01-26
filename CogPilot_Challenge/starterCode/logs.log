@@ -6039,3 +6039,1942 @@ Please also refer to the documentation for alternative solver options:
                        n_estimators=100, n_jobs=-1, oob_score=False,
                        random_state=42, verbose=0, warm_start=False)
 2023-01-14 16:58:28,340:INFO:compare_models() successfully completed......................................
+2023-01-26 16:58:12,401:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-01-26 16:58:12,401:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-01-26 16:58:12,401:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-01-26 16:58:12,401:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-01-26 16:58:12,717:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\statsmodels\tsa\base\tsa_model.py:7: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import (to_datetime, Int64Index, DatetimeIndex, Period,
+
+2023-01-26 16:58:12,717:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\statsmodels\tsa\base\tsa_model.py:7: FutureWarning: pandas.Float64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import (to_datetime, Int64Index, DatetimeIndex, Period,
+
+2023-01-26 16:58:13,567:INFO:Soft dependency imported: prophet: 1.1.1
+2023-01-26 16:58:14,998:INFO:PyCaret ClassificationExperiment
+2023-01-26 16:58:14,998:INFO:Logging name: clf-default-name
+2023-01-26 16:58:14,998:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-01-26 16:58:14,998:INFO:version 3.0.0.rc6
+2023-01-26 16:58:14,998:INFO:Initializing setup()
+2023-01-26 16:58:14,998:INFO:self.USI: 2ea4
+2023-01-26 16:58:14,998:INFO:self._variable_keys: {'fold_groups_param', 'idx', 'memory', 'logging_param', '_available_plots', 'seed', 'n_jobs_param', 'is_multiclass', 'USI', 'y_train', 'exp_name_log', 'target_param', 'data', 'fix_imbalance', 'X_test', 'html_param', '_ml_usecase', 'gpu_n_jobs_param', 'log_plots_param', 'pipeline', 'gpu_param', 'exp_id', 'y_test', 'fold_generator', 'y', 'fold_shuffle_param', 'X_train', 'X'}
+2023-01-26 16:58:14,998:INFO:Checking environment
+2023-01-26 16:58:14,998:INFO:python_version: 3.8.15
+2023-01-26 16:58:14,998:INFO:python_build: ('default', 'Nov 24 2022 14:38:14')
+2023-01-26 16:58:14,998:INFO:machine: AMD64
+2023-01-26 16:58:14,998:INFO:platform: Windows-10-10.0.22621-SP0
+2023-01-26 16:58:14,998:INFO:Memory: svmem(total=17101983744, available=5857751040, percent=65.7, used=11244232704, free=5857751040)
+2023-01-26 16:58:14,998:INFO:Physical Core: 6
+2023-01-26 16:58:14,998:INFO:Logical Core: 12
+2023-01-26 16:58:14,998:INFO:Checking libraries
+2023-01-26 16:58:14,998:INFO:System:
+2023-01-26 16:58:14,998:INFO:    python: 3.8.15 (default, Nov 24 2022, 14:38:14) [MSC v.1916 64 bit (AMD64)]
+2023-01-26 16:58:14,998:INFO:executable: c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\python.exe
+2023-01-26 16:58:14,999:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-01-26 16:58:14,999:INFO:PyCaret required dependencies:
+2023-01-26 16:58:14,999:INFO:                 pip: 22.3.1
+2023-01-26 16:58:14,999:INFO:          setuptools: 65.5.0
+2023-01-26 16:58:14,999:INFO:             pycaret: 3.0.0rc6
+2023-01-26 16:58:14,999:INFO:             IPython: 8.7.0
+2023-01-26 16:58:14,999:INFO:          ipywidgets: 7.6.5
+2023-01-26 16:58:14,999:INFO:                tqdm: 4.64.1
+2023-01-26 16:58:14,999:INFO:               numpy: 1.20.0
+2023-01-26 16:58:14,999:INFO:              pandas: 1.4.4
+2023-01-26 16:58:14,999:INFO:              jinja2: 3.1.2
+2023-01-26 16:58:14,999:INFO:               scipy: 1.5.2
+2023-01-26 16:58:14,999:INFO:              joblib: 1.2.0
+2023-01-26 16:58:14,999:INFO:             sklearn: 1.1.3
+2023-01-26 16:58:14,999:INFO:                pyod: 1.0.7
+2023-01-26 16:58:14,999:INFO:            imblearn: 0.10.1
+2023-01-26 16:58:14,999:INFO:   category_encoders: 2.5.1.post0
+2023-01-26 16:58:14,999:INFO:            lightgbm: 3.2.1
+2023-01-26 16:58:14,999:INFO:               numba: 0.56.4
+2023-01-26 16:58:14,999:INFO:            requests: 2.28.1
+2023-01-26 16:58:14,999:INFO:          matplotlib: 3.6.2
+2023-01-26 16:58:14,999:INFO:          scikitplot: 0.3.7
+2023-01-26 16:58:14,999:INFO:         yellowbrick: 1.5
+2023-01-26 16:58:14,999:INFO:              plotly: 5.9.0
+2023-01-26 16:58:15,000:INFO:             kaleido: 0.2.1
+2023-01-26 16:58:15,000:INFO:         statsmodels: 0.13.5
+2023-01-26 16:58:15,000:INFO:              sktime: 0.14.1
+2023-01-26 16:58:15,000:INFO:               tbats: 1.1.2
+2023-01-26 16:58:15,000:INFO:            pmdarima: 2.0.1
+2023-01-26 16:58:15,000:INFO:              psutil: 5.9.0
+2023-01-26 16:58:15,000:INFO:PyCaret optional dependencies:
+2023-01-26 16:58:15,020:INFO:                shap: Not installed
+2023-01-26 16:58:15,021:INFO:           interpret: Not installed
+2023-01-26 16:58:15,021:INFO:                umap: 0.5.3
+2023-01-26 16:58:15,021:INFO:    pandas_profiling: 2.9.0
+2023-01-26 16:58:15,021:INFO:  explainerdashboard: Not installed
+2023-01-26 16:58:15,021:INFO:             autoviz: Not installed
+2023-01-26 16:58:15,021:INFO:           fairlearn: Not installed
+2023-01-26 16:58:15,021:INFO:             xgboost: Not installed
+2023-01-26 16:58:15,021:INFO:            catboost: Not installed
+2023-01-26 16:58:15,021:INFO:              kmodes: 0.12.2
+2023-01-26 16:58:15,021:INFO:             mlxtend: 0.21.0
+2023-01-26 16:58:15,021:INFO:       statsforecast: 1.4.0
+2023-01-26 16:58:15,021:INFO:        tune_sklearn: Not installed
+2023-01-26 16:58:15,021:INFO:                 ray: Not installed
+2023-01-26 16:58:15,021:INFO:            hyperopt: Not installed
+2023-01-26 16:58:15,021:INFO:              optuna: Not installed
+2023-01-26 16:58:15,021:INFO:               skopt: Not installed
+2023-01-26 16:58:15,021:INFO:              mlflow: 1.30.0
+2023-01-26 16:58:15,021:INFO:              gradio: Not installed
+2023-01-26 16:58:15,021:INFO:             fastapi: Not installed
+2023-01-26 16:58:15,021:INFO:             uvicorn: Not installed
+2023-01-26 16:58:15,021:INFO:              m2cgen: Not installed
+2023-01-26 16:58:15,021:INFO:           evidently: Not installed
+2023-01-26 16:58:15,022:INFO:                nltk: 3.7
+2023-01-26 16:58:15,022:INFO:            pyLDAvis: 3.3.1
+2023-01-26 16:58:15,022:INFO:              gensim: 3.8.3
+2023-01-26 16:58:15,022:INFO:               spacy: 2.3.5
+2023-01-26 16:58:15,022:INFO:           wordcloud: 1.8.2.2
+2023-01-26 16:58:15,022:INFO:            textblob: 0.15.3
+2023-01-26 16:58:15,022:INFO:               fugue: Not installed
+2023-01-26 16:58:15,022:INFO:           streamlit: Not installed
+2023-01-26 16:58:15,022:INFO:             prophet: 1.1.1
+2023-01-26 16:58:15,022:INFO:None
+2023-01-26 16:58:15,022:INFO:Set up data.
+2023-01-26 16:58:15,030:INFO:Set up train/test split.
+2023-01-26 16:58:15,036:INFO:Set up index.
+2023-01-26 16:58:15,036:INFO:Set up folding strategy.
+2023-01-26 16:58:15,036:INFO:Assigning column types.
+2023-01-26 16:58:15,040:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-01-26 16:58:15,088:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-01-26 16:58:15,091:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-01-26 16:58:15,129:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:15,886:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:15,935:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-01-26 16:58:15,936:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-01-26 16:58:15,968:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:15,968:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:15,969:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-01-26 16:58:16,024:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-01-26 16:58:16,055:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,055:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,106:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-01-26 16:58:16,135:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,136:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,136:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-01-26 16:58:16,224:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,225:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,318:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,318:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,323:INFO:Preparing preprocessing pipeline...
+2023-01-26 16:58:16,328:INFO:Set up label encoding.
+2023-01-26 16:58:16,328:INFO:Set up simple imputation.
+2023-01-26 16:58:16,375:INFO:Finished creating preprocessing pipeline.
+2023-01-26 16:58:16,379:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\kyunomi\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['resp_01B', 'resp_02B', 'resp_03B',
+                                             'resp_04B', 'ppg_01B', 'ppg_02B',
+                                             'ppg_03B', 'ppg_04B'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='mean',
+                                                              verbose='deprecated'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose='deprecated')))],
+         verbose=False)
+2023-01-26 16:58:16,379:INFO:Creating final display dataframe.
+2023-01-26 16:58:16,626:INFO:Setup _display_container:                     Description                           Value
+0                    Session id                              42
+1                        Target                      difficulty
+2                   Target type                      Multiclass
+3                Target mapping  01B: 0, 02B: 1, 03B: 2, 04B: 3
+4           Original data shape                        (355, 9)
+5        Transformed data shape                        (355, 9)
+6   Transformed train set shape                        (248, 9)
+7    Transformed test set shape                        (107, 9)
+8               Ignore features                               3
+9              Numeric features                               8
+10                   Preprocess                            True
+11              Imputation type                          simple
+12           Numeric imputation                            mean
+13       Categorical imputation                            mode
+14               Fold Generator                 StratifiedKFold
+15                  Fold Number                              10
+16                     CPU Jobs                              -1
+17                      Use GPU                           False
+18               Log Experiment                           False
+19              Experiment Name                clf-default-name
+20                          USI                            2ea4
+2023-01-26 16:58:16,724:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,724:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,811:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,811:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-01-26 16:58:16,812:INFO:setup() successfully completed in 1.82s...............
+2023-01-26 16:58:19,230:INFO:Initializing compare_models()
+2023-01-26 16:58:19,230:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-01-26 16:58:19,230:INFO:Checking exceptions
+2023-01-26 16:58:19,234:INFO:Preparing display monitor
+2023-01-26 16:58:19,258:INFO:Initializing Logistic Regression
+2023-01-26 16:58:19,258:INFO:Total runtime is 0.0 minutes
+2023-01-26 16:58:19,261:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:19,262:INFO:Initializing create_model()
+2023-01-26 16:58:19,262:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:19,262:INFO:Checking exceptions
+2023-01-26 16:58:19,262:INFO:Importing libraries
+2023-01-26 16:58:19,263:INFO:Copying training dataset
+2023-01-26 16:58:19,265:INFO:Defining folds
+2023-01-26 16:58:19,266:INFO:Declaring metric variables
+2023-01-26 16:58:19,269:INFO:Importing untrained model
+2023-01-26 16:58:19,272:INFO:Logistic Regression Imported successfully
+2023-01-26 16:58:19,280:INFO:Starting cross validation
+2023-01-26 16:58:19,281:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:27,908:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:27,911:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:27,912:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,051:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,053:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,054:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,320:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,321:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,323:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,328:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,330:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,332:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,336:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,338:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,339:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,355:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,357:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,358:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,402:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,403:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,404:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,426:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,427:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,428:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,468:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,469:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,470:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,482:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,483:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,484:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,487:INFO:Calculating mean and std
+2023-01-26 16:58:28,489:INFO:Creating metrics dataframe
+2023-01-26 16:58:28,492:INFO:Uploading results into container
+2023-01-26 16:58:28,493:INFO:Uploading model into container now
+2023-01-26 16:58:28,493:INFO:_master_model_container: 1
+2023-01-26 16:58:28,493:INFO:_display_container: 2
+2023-01-26 16:58:28,494:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-01-26 16:58:28,494:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:28,605:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:28,605:INFO:Creating metrics dataframe
+2023-01-26 16:58:28,613:INFO:Initializing K Neighbors Classifier
+2023-01-26 16:58:28,613:INFO:Total runtime is 0.15592814286549886 minutes
+2023-01-26 16:58:28,616:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:28,617:INFO:Initializing create_model()
+2023-01-26 16:58:28,617:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:28,617:INFO:Checking exceptions
+2023-01-26 16:58:28,617:INFO:Importing libraries
+2023-01-26 16:58:28,618:INFO:Copying training dataset
+2023-01-26 16:58:28,621:INFO:Defining folds
+2023-01-26 16:58:28,621:INFO:Declaring metric variables
+2023-01-26 16:58:28,625:INFO:Importing untrained model
+2023-01-26 16:58:28,628:INFO:K Neighbors Classifier Imported successfully
+2023-01-26 16:58:28,634:INFO:Starting cross validation
+2023-01-26 16:58:28,635:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:28,764:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,766:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,768:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,771:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,773:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,775:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,781:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,783:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,785:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,786:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,787:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,789:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,789:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,791:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,791:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,792:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,792:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,793:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,794:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,794:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,795:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,800:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,801:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:28,802:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,229:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,246:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,248:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,249:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,252:INFO:Calculating mean and std
+2023-01-26 16:58:31,253:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,256:INFO:Uploading results into container
+2023-01-26 16:58:31,257:INFO:Uploading model into container now
+2023-01-26 16:58:31,257:INFO:_master_model_container: 2
+2023-01-26 16:58:31,257:INFO:_display_container: 2
+2023-01-26 16:58:31,258:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-01-26 16:58:31,258:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:31,363:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:31,363:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,372:INFO:Initializing Naive Bayes
+2023-01-26 16:58:31,372:INFO:Total runtime is 0.20190334717432656 minutes
+2023-01-26 16:58:31,375:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:31,375:INFO:Initializing create_model()
+2023-01-26 16:58:31,375:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:31,375:INFO:Checking exceptions
+2023-01-26 16:58:31,376:INFO:Importing libraries
+2023-01-26 16:58:31,376:INFO:Copying training dataset
+2023-01-26 16:58:31,379:INFO:Defining folds
+2023-01-26 16:58:31,379:INFO:Declaring metric variables
+2023-01-26 16:58:31,382:INFO:Importing untrained model
+2023-01-26 16:58:31,386:INFO:Naive Bayes Imported successfully
+2023-01-26 16:58:31,393:INFO:Starting cross validation
+2023-01-26 16:58:31,395:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:31,471:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,471:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,472:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,473:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,474:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,475:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,478:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,479:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,481:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,481:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,482:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,483:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,484:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,484:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,485:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,489:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,491:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,492:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,495:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,496:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,498:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,499:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,500:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,501:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,505:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,506:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,507:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,507:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,508:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,509:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,512:INFO:Calculating mean and std
+2023-01-26 16:58:31,513:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,516:INFO:Uploading results into container
+2023-01-26 16:58:31,517:INFO:Uploading model into container now
+2023-01-26 16:58:31,517:INFO:_master_model_container: 3
+2023-01-26 16:58:31,517:INFO:_display_container: 2
+2023-01-26 16:58:31,517:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-01-26 16:58:31,518:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:31,617:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:31,617:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,625:INFO:Initializing Decision Tree Classifier
+2023-01-26 16:58:31,625:INFO:Total runtime is 0.20612818400065103 minutes
+2023-01-26 16:58:31,628:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:31,628:INFO:Initializing create_model()
+2023-01-26 16:58:31,628:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:31,629:INFO:Checking exceptions
+2023-01-26 16:58:31,629:INFO:Importing libraries
+2023-01-26 16:58:31,629:INFO:Copying training dataset
+2023-01-26 16:58:31,633:INFO:Defining folds
+2023-01-26 16:58:31,633:INFO:Declaring metric variables
+2023-01-26 16:58:31,637:INFO:Importing untrained model
+2023-01-26 16:58:31,641:INFO:Decision Tree Classifier Imported successfully
+2023-01-26 16:58:31,650:INFO:Starting cross validation
+2023-01-26 16:58:31,651:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:31,721:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,722:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,723:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,723:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,723:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,723:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,724:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,725:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,725:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,725:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,726:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,726:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,731:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,733:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,734:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,735:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,735:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,736:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,736:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,737:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,738:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,745:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,746:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,747:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,748:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,749:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,751:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,752:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,754:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,755:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,757:INFO:Calculating mean and std
+2023-01-26 16:58:31,758:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,761:INFO:Uploading results into container
+2023-01-26 16:58:31,762:INFO:Uploading model into container now
+2023-01-26 16:58:31,762:INFO:_master_model_container: 4
+2023-01-26 16:58:31,762:INFO:_display_container: 2
+2023-01-26 16:58:31,763:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=42, splitter='best')
+2023-01-26 16:58:31,763:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:31,862:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:31,862:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,871:INFO:Initializing SVM - Linear Kernel
+2023-01-26 16:58:31,872:INFO:Total runtime is 0.210232138633728 minutes
+2023-01-26 16:58:31,875:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:31,875:INFO:Initializing create_model()
+2023-01-26 16:58:31,875:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:31,876:INFO:Checking exceptions
+2023-01-26 16:58:31,876:INFO:Importing libraries
+2023-01-26 16:58:31,876:INFO:Copying training dataset
+2023-01-26 16:58:31,879:INFO:Defining folds
+2023-01-26 16:58:31,879:INFO:Declaring metric variables
+2023-01-26 16:58:31,882:INFO:Importing untrained model
+2023-01-26 16:58:31,886:INFO:SVM - Linear Kernel Imported successfully
+2023-01-26 16:58:31,893:INFO:Starting cross validation
+2023-01-26 16:58:31,893:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:31,953:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,954:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,956:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,958:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,959:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,961:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,963:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,965:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,966:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,969:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,970:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,972:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,973:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,974:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,974:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,975:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,975:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,975:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,976:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,977:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,977:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,979:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,981:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,982:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,983:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,984:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,985:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,988:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,989:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,990:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:31,993:INFO:Calculating mean and std
+2023-01-26 16:58:31,994:INFO:Creating metrics dataframe
+2023-01-26 16:58:31,997:INFO:Uploading results into container
+2023-01-26 16:58:31,998:INFO:Uploading model into container now
+2023-01-26 16:58:31,998:INFO:_master_model_container: 5
+2023-01-26 16:58:31,998:INFO:_display_container: 2
+2023-01-26 16:58:31,998:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=42, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-01-26 16:58:31,999:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:32,096:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:32,096:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,108:INFO:Initializing Ridge Classifier
+2023-01-26 16:58:32,108:INFO:Total runtime is 0.21417231162389117 minutes
+2023-01-26 16:58:32,111:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:32,112:INFO:Initializing create_model()
+2023-01-26 16:58:32,112:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:32,112:INFO:Checking exceptions
+2023-01-26 16:58:32,112:INFO:Importing libraries
+2023-01-26 16:58:32,112:INFO:Copying training dataset
+2023-01-26 16:58:32,115:INFO:Defining folds
+2023-01-26 16:58:32,115:INFO:Declaring metric variables
+2023-01-26 16:58:32,119:INFO:Importing untrained model
+2023-01-26 16:58:32,123:INFO:Ridge Classifier Imported successfully
+2023-01-26 16:58:32,130:INFO:Starting cross validation
+2023-01-26 16:58:32,131:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:32,227:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,227:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,228:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,229:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,229:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,229:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,230:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,231:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,232:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,232:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,232:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,233:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,234:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,237:INFO:Calculating mean and std
+2023-01-26 16:58:32,238:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,241:INFO:Uploading results into container
+2023-01-26 16:58:32,242:INFO:Uploading model into container now
+2023-01-26 16:58:32,242:INFO:_master_model_container: 6
+2023-01-26 16:58:32,242:INFO:_display_container: 2
+2023-01-26 16:58:32,243:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize='deprecated', positive=False,
+                random_state=42, solver='auto', tol=0.001)
+2023-01-26 16:58:32,243:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:32,342:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:32,342:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,354:INFO:Initializing Random Forest Classifier
+2023-01-26 16:58:32,354:INFO:Total runtime is 0.21826816797256468 minutes
+2023-01-26 16:58:32,357:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:32,358:INFO:Initializing create_model()
+2023-01-26 16:58:32,358:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:32,358:INFO:Checking exceptions
+2023-01-26 16:58:32,358:INFO:Importing libraries
+2023-01-26 16:58:32,358:INFO:Copying training dataset
+2023-01-26 16:58:32,361:INFO:Defining folds
+2023-01-26 16:58:32,361:INFO:Declaring metric variables
+2023-01-26 16:58:32,365:INFO:Importing untrained model
+2023-01-26 16:58:32,369:INFO:Random Forest Classifier Imported successfully
+2023-01-26 16:58:32,375:INFO:Starting cross validation
+2023-01-26 16:58:32,376:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:32,677:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,679:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,681:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,682:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,684:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,686:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,687:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,689:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,689:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,690:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,691:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,693:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,700:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,701:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,701:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,702:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,703:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,703:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,710:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,712:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,712:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,713:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,714:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,714:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,715:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,717:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,718:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,726:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,726:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,727:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,730:INFO:Calculating mean and std
+2023-01-26 16:58:32,731:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,735:INFO:Uploading results into container
+2023-01-26 16:58:32,735:INFO:Uploading model into container now
+2023-01-26 16:58:32,736:INFO:_master_model_container: 7
+2023-01-26 16:58:32,736:INFO:_display_container: 2
+2023-01-26 16:58:32,736:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=42, verbose=0, warm_start=False)
+2023-01-26 16:58:32,736:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:32,834:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:32,834:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,845:INFO:Initializing Quadratic Discriminant Analysis
+2023-01-26 16:58:32,845:INFO:Total runtime is 0.22645126183827716 minutes
+2023-01-26 16:58:32,848:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:32,849:INFO:Initializing create_model()
+2023-01-26 16:58:32,849:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:32,849:INFO:Checking exceptions
+2023-01-26 16:58:32,849:INFO:Importing libraries
+2023-01-26 16:58:32,850:INFO:Copying training dataset
+2023-01-26 16:58:32,852:INFO:Defining folds
+2023-01-26 16:58:32,853:INFO:Declaring metric variables
+2023-01-26 16:58:32,856:INFO:Importing untrained model
+2023-01-26 16:58:32,860:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-01-26 16:58:32,867:INFO:Starting cross validation
+2023-01-26 16:58:32,868:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:32,911:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,911:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,916:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,919:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,920:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,928:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,928:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,937:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,937:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,940:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,942:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,942:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,942:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:32,944:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,944:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,945:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,947:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,948:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,950:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,950:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,951:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,951:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,953:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,953:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,954:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,957:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,958:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,959:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,961:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,962:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,963:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,964:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,964:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,965:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,965:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,966:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,966:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,969:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,970:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,971:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:32,974:INFO:Calculating mean and std
+2023-01-26 16:58:32,975:INFO:Creating metrics dataframe
+2023-01-26 16:58:32,978:INFO:Uploading results into container
+2023-01-26 16:58:32,978:INFO:Uploading model into container now
+2023-01-26 16:58:32,979:INFO:_master_model_container: 8
+2023-01-26 16:58:32,979:INFO:_display_container: 2
+2023-01-26 16:58:32,979:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-01-26 16:58:32,979:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:33,076:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:33,076:INFO:Creating metrics dataframe
+2023-01-26 16:58:33,086:INFO:Initializing Ada Boost Classifier
+2023-01-26 16:58:33,087:INFO:Total runtime is 0.23048854668935137 minutes
+2023-01-26 16:58:33,089:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:33,090:INFO:Initializing create_model()
+2023-01-26 16:58:33,090:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:33,090:INFO:Checking exceptions
+2023-01-26 16:58:33,090:INFO:Importing libraries
+2023-01-26 16:58:33,090:INFO:Copying training dataset
+2023-01-26 16:58:33,093:INFO:Defining folds
+2023-01-26 16:58:33,093:INFO:Declaring metric variables
+2023-01-26 16:58:33,097:INFO:Importing untrained model
+2023-01-26 16:58:33,101:INFO:Ada Boost Classifier Imported successfully
+2023-01-26 16:58:33,107:INFO:Starting cross validation
+2023-01-26 16:58:33,108:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:33,282:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,284:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,285:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,298:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,298:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,299:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,299:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,300:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:33,300:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,301:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,309:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,311:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,313:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,313:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,314:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,315:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,315:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,316:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,317:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,317:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,319:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,320:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:33,320:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,324:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,325:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,326:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,326:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,328:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,329:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,351:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,352:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,353:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,356:INFO:Calculating mean and std
+2023-01-26 16:58:33,357:INFO:Creating metrics dataframe
+2023-01-26 16:58:33,361:INFO:Uploading results into container
+2023-01-26 16:58:33,361:INFO:Uploading model into container now
+2023-01-26 16:58:33,362:INFO:_master_model_container: 9
+2023-01-26 16:58:33,362:INFO:_display_container: 2
+2023-01-26 16:58:33,362:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=42)
+2023-01-26 16:58:33,362:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:33,461:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:33,462:INFO:Creating metrics dataframe
+2023-01-26 16:58:33,474:INFO:Initializing Gradient Boosting Classifier
+2023-01-26 16:58:33,474:INFO:Total runtime is 0.23692831198374428 minutes
+2023-01-26 16:58:33,477:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:33,477:INFO:Initializing create_model()
+2023-01-26 16:58:33,477:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:33,477:INFO:Checking exceptions
+2023-01-26 16:58:33,477:INFO:Importing libraries
+2023-01-26 16:58:33,478:INFO:Copying training dataset
+2023-01-26 16:58:33,480:INFO:Defining folds
+2023-01-26 16:58:33,480:INFO:Declaring metric variables
+2023-01-26 16:58:33,484:INFO:Importing untrained model
+2023-01-26 16:58:33,488:INFO:Gradient Boosting Classifier Imported successfully
+2023-01-26 16:58:33,495:INFO:Starting cross validation
+2023-01-26 16:58:33,497:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:33,917:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,918:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,920:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,930:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,932:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,933:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,936:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,938:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,939:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,940:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,941:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,943:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,944:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,944:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,945:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,945:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,947:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,947:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,949:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,950:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,951:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,962:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,963:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,964:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,965:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,966:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,967:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,967:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,968:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,968:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:33,971:INFO:Calculating mean and std
+2023-01-26 16:58:33,973:INFO:Creating metrics dataframe
+2023-01-26 16:58:33,977:INFO:Uploading results into container
+2023-01-26 16:58:33,977:INFO:Uploading model into container now
+2023-01-26 16:58:33,977:INFO:_master_model_container: 10
+2023-01-26 16:58:33,978:INFO:_display_container: 2
+2023-01-26 16:58:33,978:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-01-26 16:58:33,978:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:34,078:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:34,078:INFO:Creating metrics dataframe
+2023-01-26 16:58:34,089:INFO:Initializing Linear Discriminant Analysis
+2023-01-26 16:58:34,089:INFO:Total runtime is 0.2471884489059448 minutes
+2023-01-26 16:58:34,092:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:34,093:INFO:Initializing create_model()
+2023-01-26 16:58:34,093:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:34,093:INFO:Checking exceptions
+2023-01-26 16:58:34,093:INFO:Importing libraries
+2023-01-26 16:58:34,093:INFO:Copying training dataset
+2023-01-26 16:58:34,096:INFO:Defining folds
+2023-01-26 16:58:34,096:INFO:Declaring metric variables
+2023-01-26 16:58:34,100:INFO:Importing untrained model
+2023-01-26 16:58:34,104:INFO:Linear Discriminant Analysis Imported successfully
+2023-01-26 16:58:34,110:INFO:Starting cross validation
+2023-01-26 16:58:34,111:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:34,189:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,190:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,191:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,192:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,192:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,192:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,193:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,193:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,194:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,195:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,195:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,195:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,197:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,197:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,199:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,201:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,202:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,202:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,203:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,204:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,206:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,209:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,210:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,211:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,213:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,214:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,214:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,215:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,215:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,216:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,218:INFO:Calculating mean and std
+2023-01-26 16:58:34,220:INFO:Creating metrics dataframe
+2023-01-26 16:58:34,223:INFO:Uploading results into container
+2023-01-26 16:58:34,223:INFO:Uploading model into container now
+2023-01-26 16:58:34,224:INFO:_master_model_container: 11
+2023-01-26 16:58:34,224:INFO:_display_container: 2
+2023-01-26 16:58:34,225:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-01-26 16:58:34,225:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:34,324:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:34,324:INFO:Creating metrics dataframe
+2023-01-26 16:58:34,337:INFO:Initializing Extra Trees Classifier
+2023-01-26 16:58:34,337:INFO:Total runtime is 0.25131752093633014 minutes
+2023-01-26 16:58:34,340:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:34,340:INFO:Initializing create_model()
+2023-01-26 16:58:34,340:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:34,340:INFO:Checking exceptions
+2023-01-26 16:58:34,341:INFO:Importing libraries
+2023-01-26 16:58:34,341:INFO:Copying training dataset
+2023-01-26 16:58:34,343:INFO:Defining folds
+2023-01-26 16:58:34,344:INFO:Declaring metric variables
+2023-01-26 16:58:34,347:INFO:Importing untrained model
+2023-01-26 16:58:34,350:INFO:Extra Trees Classifier Imported successfully
+2023-01-26 16:58:34,357:INFO:Starting cross validation
+2023-01-26 16:58:34,358:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:34,619:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,621:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,622:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,625:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,626:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,628:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,629:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,629:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,629:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,631:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,633:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,638:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,639:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,641:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,648:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,650:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,650:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,651:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,651:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,652:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,654:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,655:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,656:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,663:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,664:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,664:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,665:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,665:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,666:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:34,668:INFO:Calculating mean and std
+2023-01-26 16:58:34,670:INFO:Creating metrics dataframe
+2023-01-26 16:58:34,673:INFO:Uploading results into container
+2023-01-26 16:58:34,673:INFO:Uploading model into container now
+2023-01-26 16:58:34,674:INFO:_master_model_container: 12
+2023-01-26 16:58:34,674:INFO:_display_container: 2
+2023-01-26 16:58:34,674:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=42, verbose=0, warm_start=False)
+2023-01-26 16:58:34,674:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:34,772:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:34,772:INFO:Creating metrics dataframe
+2023-01-26 16:58:34,784:INFO:Initializing Light Gradient Boosting Machine
+2023-01-26 16:58:34,784:INFO:Total runtime is 0.2587748646736145 minutes
+2023-01-26 16:58:34,787:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:34,787:INFO:Initializing create_model()
+2023-01-26 16:58:34,787:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:34,787:INFO:Checking exceptions
+2023-01-26 16:58:34,787:INFO:Importing libraries
+2023-01-26 16:58:34,788:INFO:Copying training dataset
+2023-01-26 16:58:34,791:INFO:Defining folds
+2023-01-26 16:58:34,791:INFO:Declaring metric variables
+2023-01-26 16:58:34,794:INFO:Importing untrained model
+2023-01-26 16:58:34,798:INFO:Light Gradient Boosting Machine Imported successfully
+2023-01-26 16:58:34,805:INFO:Starting cross validation
+2023-01-26 16:58:34,806:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:36,166:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,167:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,168:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,168:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,169:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,170:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,175:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,176:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,177:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,178:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,178:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,179:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,195:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,195:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,196:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,197:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,197:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,197:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,198:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,198:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,199:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,199:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,200:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,201:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,203:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,204:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,204:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,205:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,205:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,206:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,209:INFO:Calculating mean and std
+2023-01-26 16:58:36,210:INFO:Creating metrics dataframe
+2023-01-26 16:58:36,213:INFO:Uploading results into container
+2023-01-26 16:58:36,213:INFO:Uploading model into container now
+2023-01-26 16:58:36,214:INFO:_master_model_container: 13
+2023-01-26 16:58:36,214:INFO:_display_container: 2
+2023-01-26 16:58:36,214:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-01-26 16:58:36,214:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:36,315:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:36,316:INFO:Creating metrics dataframe
+2023-01-26 16:58:36,328:INFO:Initializing Dummy Classifier
+2023-01-26 16:58:36,328:INFO:Total runtime is 0.2845014015833537 minutes
+2023-01-26 16:58:36,331:INFO:SubProcess create_model() called ==================================
+2023-01-26 16:58:36,331:INFO:Initializing create_model()
+2023-01-26 16:58:36,331:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021B185BA130>, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:36,332:INFO:Checking exceptions
+2023-01-26 16:58:36,332:INFO:Importing libraries
+2023-01-26 16:58:36,332:INFO:Copying training dataset
+2023-01-26 16:58:36,335:INFO:Defining folds
+2023-01-26 16:58:36,335:INFO:Declaring metric variables
+2023-01-26 16:58:36,338:INFO:Importing untrained model
+2023-01-26 16:58:36,342:INFO:Dummy Classifier Imported successfully
+2023-01-26 16:58:36,350:INFO:Starting cross validation
+2023-01-26 16:58:36,351:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-01-26 16:58:36,413:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,414:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,415:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,416:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,420:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,422:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,422:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,422:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,423:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,423:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,424:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,425:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,428:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,431:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,431:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,432:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,433:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,434:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,435:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,435:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,436:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,437:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,437:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,438:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,441:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,442:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,443:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,444:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,445:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,445:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,446:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,447:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,447:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,447:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,447:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,448:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,448:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,448:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,449:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-01-26 16:58:36,449:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\metrics\_classification.py:1386: UserWarning: Note that pos_label (set to '04B') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-01-26 16:58:36,452:INFO:Calculating mean and std
+2023-01-26 16:58:36,453:INFO:Creating metrics dataframe
+2023-01-26 16:58:36,457:INFO:Uploading results into container
+2023-01-26 16:58:36,457:INFO:Uploading model into container now
+2023-01-26 16:58:36,457:INFO:_master_model_container: 14
+2023-01-26 16:58:36,458:INFO:_display_container: 2
+2023-01-26 16:58:36,458:INFO:DummyClassifier(constant=None, random_state=42, strategy='prior')
+2023-01-26 16:58:36,458:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:36,557:INFO:SubProcess create_model() end ==================================
+2023-01-26 16:58:36,557:INFO:Creating metrics dataframe
+2023-01-26 16:58:36,579:INFO:Initializing create_model()
+2023-01-26 16:58:36,579:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021B33475C70>, estimator=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-01-26 16:58:36,579:INFO:Checking exceptions
+2023-01-26 16:58:36,582:INFO:Importing libraries
+2023-01-26 16:58:36,582:INFO:Copying training dataset
+2023-01-26 16:58:36,584:INFO:Defining folds
+2023-01-26 16:58:36,584:INFO:Declaring metric variables
+2023-01-26 16:58:36,584:INFO:Importing untrained model
+2023-01-26 16:58:36,584:INFO:Declaring custom model
+2023-01-26 16:58:36,585:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-01-26 16:58:36,585:INFO:Cross validation set to False
+2023-01-26 16:58:36,585:INFO:Fitting Model
+2023-01-26 16:58:36,611:WARNING:c:\Users\kyunomi\anaconda3\envs\cogpilot-pycaret\lib\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-01-26 16:58:36,612:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-01-26 16:58:36,612:INFO:create_model() successfully completed......................................
+2023-01-26 16:58:36,737:INFO:_master_model_container: 14
+2023-01-26 16:58:36,738:INFO:_display_container: 2
+2023-01-26 16:58:36,738:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-01-26 16:58:36,738:INFO:compare_models() successfully completed......................................
