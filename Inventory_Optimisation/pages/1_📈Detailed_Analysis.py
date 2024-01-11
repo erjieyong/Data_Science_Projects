@@ -29,7 +29,7 @@ average_days_per_month = 30.437
 # we need the following so that streamlit will only run the following once
 # in this case, it will cache our df and not rerun it everytime we change something on the app
 # https://discuss.streamlit.io/t/not-to-run-entire-script-when-a-widget-value-is-changed/502/5
-@st.experimental_memo
+@st.cache_data
 def read_df_combined():
     df_combined = pd.read_csv('https://generalassemblydsi32.s3.ap-southeast-1.amazonaws.com/ABC_Analysis-221125/df_combined_sanitised.csv')
     # df_combined = pd.read_csv("df_combined.csv")
