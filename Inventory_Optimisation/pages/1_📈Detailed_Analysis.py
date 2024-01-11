@@ -31,7 +31,7 @@ average_days_per_month = 30.437
 # https://discuss.streamlit.io/t/not-to-run-entire-script-when-a-widget-value-is-changed/502/5
 @st.cache_data
 def read_df_combined():
-    df_combined = pd.read_csv('https://generalassemblydsi32.s3.ap-southeast-1.amazonaws.com/ABC_Analysis-221125/df_combined_sanitised.csv')
+    df_combined = pd.read_csv('https://kyunomi-demo-s3.s3.ap-southeast-1.amazonaws.com/df_combined_sanitised.csv')
     # df_combined = pd.read_csv("df_combined.csv")
     df_combined["stock_month_2dp"] = df_combined["stock_month"].round(2)
     df_combined["stock_days_2dp"] = (df_combined["stock_month"]*average_days_per_month).round(2)
